@@ -16,15 +16,7 @@ EVduration = [event.DUR]';
 % Word = find(768<EVvalue&EVvalue<773);
 
 Word = find(EVvalue==783);
-% % for each word find the condition
-% for w = 1:length(Word)
-%   % code for the judgement task: 1 => Affective; 2 => Ontological;
-%   if strcmp('S131', EVvalue{Word(w)+1}) == 1
-%     task(w,1) = 1;
-%   elseif strcmp('S132', EVvalue{Word(w)+1}) == 1
-%     task(w,1) = 2;
-%   end
-% end
+
 
 PreTrig   = 0;
 PostTrig  = round(4 * hdr.Fs);
