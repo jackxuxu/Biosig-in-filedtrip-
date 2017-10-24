@@ -13,9 +13,9 @@ EVvalue    = [event.TYP]';
 EVduration = [event.DUR]';
 
 % select the target stimuli
-% Word = find(768<EVvalue&EVvalue<773);
+ Word = find(768<EVvalue&EVvalue<773);% for get the training epoch
 
-Word = find(EVvalue==783);
+% Word = find(EVvalue==783); % for test dara
 
 
 PreTrig   = 0;
